@@ -1,9 +1,3 @@
-usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
-           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
-           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]
-           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
-           <command> [<args>]
-
 --Joins tables
 SELECT admissions.subject_id, diagnoses_icd.icd9_code, PATIENTS.gender, admissions.admission_location, admissions.discharge_location 
 FROM ((admissions
