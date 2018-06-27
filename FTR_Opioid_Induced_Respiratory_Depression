@@ -1,0 +1,81 @@
+//Failure-to-Rescue_-Monitoring-for-Opioid-Induced-Respiratory-Depression
+//preliminary retrospective query analysis of adult inpatient discharges,  
+//to see if there a different outcome observation, in terms of complications, FTR, readmission, or/and LOS. 
+//more info could be found here:
+//https://patientsafetymovement.org/wp-content/uploads/2016/02/APSS-4_-Failure-to-Rescue_-Monitoring-for-Opioid-Induced-Respiratory-Depression.pdf
+
+
+//cadidate parameters for query
+All surgical discharges,  for adult patients (>18 years) inpatient, all admissions, any listed ICD-10-PCS procedure codes for an operating room procedure; 
+and the principlal procedure occurring within 2 days (Mallory). Outcomes of interest were patients who had a diagnosis or procedural code for CPA (ICD-9 = 427.5), respiratory arrest (RA, ICD-9 = 799.1), or cardiopulmonary resuscitation (CPR, ICD-9 procedure = 99.60 or CPT = 92950) entered into their billing record. Patients meeting these diagnostic criteria should be included in our definition of CPRA (Paul?). 
+Patients were excluded if they: (1) were outpatients, (2) had an admitting diagnosis of CPRA (based on ICD-9-CM codes), (3) had pre-existing acute respiratory failure based on the presence on admission of ICD-9 518.81 and 518.84 as the principal diagnosis or secondary diagnosis, or (4) had a diagnosis of a neuromuscular disorder.
+patient meet inclusion and exclusion criteria accordingly to AHRQ PSI-04
+STRATUM_DVT
+STRATUM_PNEMONIA
+STARTUM_SEPSIS
+STRATUM_SHOCK
+STRATUM_GI_HEM
+
+Patients records identified, with patients receiving: 
+1. opioids and sedatives, 
+2. opioids only, 
+3. sedatives only, 
+4. neither opioids nor sedatives 
+Types of Medications To be Included:
+Opioids	& Sedatives
+Alfentanil hydrochloride
+Codeine
+Fentanyl
+Fentanyl citrate
+Hydrocodone bitartrate
+Hydromorphone
+Levorphanol
+Loperamide
+Meperidine
+Methadone
+Morphine
+Oxycodone
+Propoxyphene
+Remifentanil
+Sufentanil
+Tramadol	Anticonvulsants
+Gabapentin
+Pregabalin 
+
+Antiemetics
+Diphenhydramine
+Promethazine
+Transdermal scopolamine
+Dimenhydrinate
+Prochlorperazine
+
+Benzodiazepines
+Triazolam
+Temazepam
+Lorazepam
+Diazepam
+Clonazepam	Muscle Relaxants
+Cyclobenzaprine
+
+Opioid Antagonists
+Naltrexone
+Nalmefene 
+
+Sleep aids
+Zolpidem
+Eszopiclone
+Ramelteon 
+
+Tricyclic antidepressants
+Amitriptyline
+Imipramine
+Doxepin
+Nortriptyline
+
+references: 
+// https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4767404/
+PLoS One. 2016; 11(2): e0150214.
+Published online 2016 Feb 25. doi:  10.1371/journal.pone.0150214
+PMCID: PMC4767404
+PMID: 26913753
+Association of Opioids and Sedatives with Increased Risk of In-Hospital Cardiopulmonary Arrest 
