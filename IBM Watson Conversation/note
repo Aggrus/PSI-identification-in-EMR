@@ -1,0 +1,39 @@
+reference: https://console.bluemix.net/docs/services/conversation/index.html#about
+With the IBM Watson™ Assistant service, you can build a solution that understands natural-language input and uses machine learning to respond to customers in a way that simulates a conversation between humans.
+
+How it works
+This diagram shows the overall architecture of a complete solution:Flow diagram of the service
+
+Users interact with your application through the user interface that you implement. For example, a simple chat window or a mobile app, or even a robot with a voice interface.
+
+The application sends the user input to the Watson Assistant service.
+
+The application connects to a workspace, which is a container for your dialog flow and training data.
+The service interprets the user input, directs the flow of the conversation and gathers information that it needs.
+You can connect additional Watson services to analyze user input, such as Tone Analyzer or Speech to Text.
+The application can interact with your back-end systems based on the user's intent and additional information. For example, answer question, open tickets, update account information, or place orders. There is no limit to what you can do.
+
+Implementation
+Here's how you will implement your conversation:
+
+Configure a workspace. With the easy-to-use graphical environment, set up the training data and dialog for your conversation.
+
+The training data consists of the following artifacts:
+
+Intents: Goals that you anticipate your users will have when they interact with the service. Define one intent for each goal that can be identified in a user's input. For example, you might define an intent named store_hours that answers questions about store hours. For each intent, you add sample utterances that reflect the input customers might use to ask for the information they need, such as, What time do you open?
+Entities: An entity represents a term or object that provides context for an intent. For example, an entity might be a city name that helps your dialog to distinguish which store the user wants to know store hours for.
+
+As you add training data, a natural language classifier is automatically added to the workspace, and is trained to understand the types of requests that you have indicated the service should listen for and respond to.
+
+Use the dialog tool to build a dialog flow that incorporates your intents and entities. The dialog flow is represented graphically in the tool as a tree. You can add a branch to process each of the intents that you want the service to handle. You can then add branch nodes that handle the many possible permutations of a request based on other factors, such as the entities found in the user input or information that is passed to the service from your application or another external service.
+
+Deploy your workspace. Deploy the configured workspace to users by connecting it to a front-end user interface, social media, or a messaging channel. Your deployed instance of the Watson Assistant service is hosted by IBM Cloud, the IBM cloud computing platform. (See Platform overview External link icon for more information.)
+
+Read more about these implementation steps by following these links:
+
+Planning your intents and entities
+Dialog overview
+Deployment overview
+Browser support
+The Watson Assistant service tooling requires the same level of browser software as is required by IBM Cloud. See the IBM Cloud Prerequisites External link icon topic for details.
+
