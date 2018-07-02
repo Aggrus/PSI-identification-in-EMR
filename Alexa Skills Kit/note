@@ -1,0 +1,135 @@
+reference: https://developer.amazon.com/docs/custom-skills/understanding-custom-skills.html
+
+Understand Custom Skills
+This document provides a high-level overview of building a custom skill.
+
+For step-by-step guide, see Steps to Build a Custom Skill.
+For Node.js samples and templates, see the Alexa GitHub organization.
+Is a custom skill the right type of skill for what you want to build? See Understand the Different Skill Models to learn about other options like the Smart Home Skill API.
+
+Components of a Custom Skill
+Conduct a Conversation with the User
+Provide a Visual Component for Your Skill
+Collect the Images, Audio Files, and Video Files for Use in Your Skill
+Host the Cloud-Based Service for Your Skill
+Next Steps
+Components of a Custom Skill
+When designing and building a custom skill, you create the following:
+
+A set of intents that represent actions that users can do with your skill. These intents represent the core functionality for your skill.
+A set of sample utterances that specify the words and phrases users can say to invoke those intents. You map these utterances to your intents. This mapping forms the interaction model for the skill.
+An invocation name that identifies the skill. The user includes this name when initiating a conversation with your skill.
+If applicable, a set of images, audio files, and video files that you want to include in the skill. These must be stored on a publicly accessible site so that each item is accessible by a unique URL.
+A cloud-based service that accepts these intents as structured requests and then acts upon them. This service must be accessible over the Internet. You provide an endpoint for your service when configuring the skill.
+A configuration that brings all of the above together so that Alexa can route requests to the service for your skill. You create this configuration in the developer console.
+For example, a skill for getting tide information might define an intent called OneshotTideIntent to represent the user's request to look up tide information for a particular coastal city.
+
+This intent would be mapped to several sample utterances such as:
+
+OneshotTideIntent get high tide
+OneshotTideIntent get high tide for {City}
+OneshotTideIntent tide information for {City}
+OneshotTideIntent when is high tide in {City}
+...
+(many more sample utterances)
+A user would say something like:
+
+User: Alexa, get high tide for Seattle from Tide Pooler
+(In this example, the italicized words form the sample utterance you have defined, while the invocation name is shown in bold).
+
+Speaking this to an Alexa-enabled device does the following:
+
+The user's speech is streamed to the Alexa service in the cloud.
+Alexa recognizes that this request represents the OneshotTideIntent intent for the "Tide Pooler" skill.
+Alexa structures this information into a request (specifically an IntentRequest in this example) and sends this request to the service defined for Tide Pooler. The request includes the value "seattle" as the "City".
+The Tide Pooler service gets the request and takes an appropriate action (looking up tide information for the current date in Seattle from http://tidesandcurrents.noaa.gov/).
+Tide Pooler sends the Alexa service a structured response with the text to speak to the user.
+The Alexa-enabled device speaks the response back to the user:
+
+Tide Pooler: Today in Seattle, the first high tide will be around 1:42 in the morning, and will peak at about 10 feet…
+
+User Interaction flow
+User Interaction Flow
+Conduct a Conversation with the User
+A custom skill typically gets a question or other information from the user and then replies with an answer or some action, such as ordering a car or a pizza. Users can invoke your skill by using your invocation name in combination with sample utterances and phrases defined by Alexa:
+
+Alexa, Get high tide for seattle from Tide Pooler
+Alexa, Ask Recipes how do I make an omelet?
+Alexa, Ask Daily Horoscopes about Taurus
+Alexa, Give ten points to Stephen using Score Keeper
+Users can also start interacting with a skill without providing any specific question or request:
+
+Alexa, Open Tide Pooler
+Alexa, Talk to Recipes
+Alexa, Play Trivia Master
+Alexa, Start Score Keeper
+Users may use this option if they don't know or can't remember the exact request they want to make. In this case, the skill normally returns a welcome message that provides users brief help on how to use the skill.
+
+In the above examples, the bolded words are defined by the Alexa service, while the italicized words are sample utterances defined for the skill.
+
+If your skill needs more information to complete a request, you can have a back-and-forth conversation with the user:
+
+User: Alexa, get high tide from Tide Pooler (Although 'get high tide' maps to the OneShotTideIntent, the user didn't specify the city. Tide Pooler needs to collect this information to continue.)
+Tide Pooler: Tide information for what city? (Alexa is now listening for the user's response. For a device with a light ring, like an Amazon Echo, the device lights up to give a visual cue)
+User: Seattle
+Tide Pooler: Today in Seattle, the first high tide will be at…
+Interaction ends.
+
+Learn more:
+
+Understand How Users Invoke Custom Skills
+Choose the Invocation Name for a Custom Skill
+Create the Interaction Model for Your Skill
+About Managing the Conversation with the User
+Provide a Visual Component for Your Skill
+The Amazon Alexa App is a free companion app available for Fire OS, Android, iOS, and desktop web browsers. This app is relevant to your custom skill in two ways:
+
+The app displays skill detail cards for all published skills. Users review these cards to learn what your skill does and how to use it when deciding whether to enable your skill. You facilitate this by providing useful information about your skill when preparing it for publishing.
+The app displays home cards that describe or enhance the user's voice interactions with Alexa. Users can view these cards later, to get more information about the interaction or refresh their memory about Alexa's response.
+
+Your skill can include content for these cards in your responses.
+
+For example, the Tide Pooler skill sends a home card containing the tide information the user asked for. The home card gives the user a way to view the tide information without making another voice request.
+
+Home card for the Tide Pooler sample
+Home card for the Tide Pooler sample
+You can also create a skill that incorporates voice, screen, and touch interactions for Alexa-enabled devices with a screen. See Display Interface Reference.
+
+Learn more:
+
+Including a Card in Your Skill's Response
+Create Skills for Alexa-Enabled Devices With a Screen
+Launch Your Skill
+Collect the Images, Audio Files, and Video Files for Use in Your Skill
+Your skill may use audio files with AudioPlayer. Skills that are designed for an Alexa-enabled device with a screen may also use images and video files.
+
+Any such external resources must be available on a publicly accessible website. Each item is referenced by a unique URL that uses HTTPS.
+
+Host the Cloud-Based Service for Your Skill
+You can host your service in AWS Lambda or as a web service hosted on your own endpoint.
+
+AWS Lambda (an Amazon Web Services offering) is a service that lets you run code in the cloud without managing servers. Alexa sends your Lambda function user requests and your code can inspect the request, take any necessary actions (such as looking up information online) and then send back a response. You can write Lambda functions in Node.js, Java, Python, or C#. This is generally the easiest way to host the service for a skill.
+
+Alternatively, you can write a web service and host it with any cloud hosting provider. The web service must accept requests over HTTPS. In this case, Alexa sends requests to your web service and your service takes any necessary actions and then sends back a response. You can write your web service in any language.
+
+Learn more about using Lambda for a skill:
+
+Create a Lambda Function for a Skill
+Deploying a Sample Custom Skill to AWS Lambda
+Learn more about using a web service for a skill:
+
+Hosting a Custom Skill as a Web Service
+Deploying a Sample Custom Skill as a Web Service
+Next Steps
+Next: See all the steps to build a skill.
+
+Get the Alexa Skills Kit SDK for Node.js.
+
+See more Node.js samples and templates in the Alexa GitHub organization.
+
+Jump into sample code:
+
+Using the Alexa Skills Kit Samples (Custom Skills)
+Deploying a Sample Custom Skill to AWS Lambda
+Deploying a Sample Custom Skill as a Web Service
+Learn Alexa Skills Kit terms: Alexa Skills Kit Glossary
