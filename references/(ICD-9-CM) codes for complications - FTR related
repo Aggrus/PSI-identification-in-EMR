@@ -1,0 +1,20 @@
+Supplementary Table. List of International Classification of Diseases, Ninth Revision, Clinical Modification (ICD-9-CM) codes for complications
+
+Complication	ICD-9-CM code	Exclusion/notes
+Acute renal failure (venous catheterization for renal dialysis)	38.95	Excluded patients who required dialysis preoperatively
+Postoperative transfusion	99.0	Includes red blood cell transfusion within 72 hours of operation
+Cardiac arrest	997.1, 427.5	
+DVT requiring treatment	451.1, 451.0, 453.8 and any of the following procedures/diagnoses: 790.92, 38.93	
+Prolonged ventilator (>96 hours)	96.72	
+Pulmonary embolism	415.1, 88.43, 92.15	
+Sepsis	038.XX	
+Unplanned reintubation	518.5 and 96.0	If after index surgery date
+Septic shock	785.52	
+Perioperative stroke	997.02	
+Respiratory	997.3, 518.4, 518.5	
+Infection	998.5, 996.62	
+Shock	998.0	
+Arterial reintervention	38.03, 38.04, 38.06, 38.08, 38.18, 38.38, 38.48, 38.86, 38.88, 39.24, 39.26, 39.49, 39.50, 39.59, 39.79, 39.90, 44.44, 88.42, 84.13, 84.14, 84.15, 84.16, 84.17, 88.42	If arterial reintervention date is after index surgery date
+Other complications due to other vascular device implant and graft	996.74	
+Amputation	84.0, 84.1, 84.91, 84.13, 84.14, 84.15, 84.16, 84.17	If after index surgery date
+Wound complication	53.0, 53.1, 53.2, 53.3, 53.5, 53.6, 54.61	If after index surgery date
