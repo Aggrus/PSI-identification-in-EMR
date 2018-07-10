@@ -1,0 +1,19 @@
+Common Formats for Event Reporting - Hospital Version 2.0
+Common Formats for Event Reporting - Hospital Version 2.0 (CFER-H V2.0) constitutes a major release of the AHRQ Common Formats and reflects these key changes:
+
+Common Formats is the generic term for the standardized reporting formats, using common language and definitions that AHRQ is developing for reporting safety concerns from a variety of health care settings and throughout the quality improvement cycle
+Data elements are designated as either 'core' or 'supplemental' for reporting purposes;
+Event descriptions for each module are condensed;
+
+Core and supplemental data elements designate two types of data sets. All data elements contained in the core data sets are required for event reporting at the local level by providers to PSOs and the PSOPPC for national aggregation and analysis. Those data elements contained in the supplemental data sets may be collected at the local level for additional analysis, and may be reported to PSOs, but will not be accepted by the PSOPPC for national aggregation and analysis at this time.
+
+Specific changes in CFER-H V2.0 compared with Common Formats for Event Reporting - Hospital Version 1.2 (CFER-H V1.2) are:
+
+To reduce reporting burden, CFER-H V2.0 event descriptions are condensed resulting in fewer data elements than CFER-H V1.2;
+In CFER-H V2.0, the Healthcare Event Reporting Form (HERF), Patient Information Form (PIF), and Summary of Initial Report (SIR) are consolidated into one module, called the Generic module;
+The separate Healthcare-associated Infection (HAI) module has been retired with CFER-H V2.0, but occurrences of HAIs are still reported using the Generic module instead of a separate HAI-specific module;
+The Surgery or Anesthesia module is split into two separate modules with separate event descriptions and flow charts;
+Health Information Technology (HIT) is removed from the Device or Medical/Surgical Supply module, and is treated as a Contributing Factor in the Generic module;
+Paper forms were eliminated to encourage the electronic reporting of patient safety concerns based on data element information found in the Data Dictionary, Resources Workbook, and Flow Charts.
+
+reference: https://www.psoppc.org/psoppc_web/publicpages/commonFormatsHV2.0v
