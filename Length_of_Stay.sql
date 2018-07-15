@@ -1,0 +1,1 @@
+select subject_id, admission_type, age( dischtime, admittime) from admissions;
