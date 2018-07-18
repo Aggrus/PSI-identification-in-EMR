@@ -1,32 +1,17 @@
-SELECT admissions.subject_id, admissions.admittime, diagnoses_icd.icd9_code,
-CASE 
-WHEN admissions.subject_id = lag(admissions.subject_id)OVER(ORDER BY admissions.subject_id) 
-THEN age(admissions.admittime,lag(admissions.admittime)OVER(ORDER BY admissions.subject_id)) 
-END as LAGTTIME,
+-- *user will need to manually select patients who were readmitted within 30 days. if a row contains "below row under 30 days" in the checkleadtime column OR "above row under 30 days" in the checklagtime columnn, then the subject_id in those columns has multiple admission dates within 30 days. 
+SELECT admissions.subject_id, admissions.admittime, diagnoses_icd.icd9_code,CASE WHEN admissions.subject_id = lag(admissions.subject_id)OVER(ORDER BY admissions.subject_id) THEN age(admissions.admittime,lag(admissions.admittime)OVER(ORDER BY admissions.subject_id)) END as LAGTTIME,
 --find time interval between admission dates when displayed subject_id matches the subject_id in row above
-CASE 
-WHEN
-admissions.subject_id = lag(admissions.subject_id)OVER(ORDER BY admissions.subject_id) AND age(admissions.admittime,lag(admissions.admittime)OVER(ORDER BY admissions.subject_id)) BETWEEN (interval '0 days, 0:00:01') AND (interval '29 days, 23:59:59')
-THEN 'above row under 30 days' ELSE 'NULL' END as CHECKLAGTTIME,
---checks to see if admission times are within 30 days of each other
-CASE 
-WHEN admissions.subject_id = lead(admissions.subject_id)OVER(ORDER BY admissions.subject_id)
-THEN age(lead(admissions.admittime)OVER(ORDER BY admissions.subject_id),admissions.admittime)
-END as LEADTIME,
+CASE WHEN admissions.subject_id = lag(admissions.subject_id)OVER(ORDER BY admissions.subject_id) AND age(admissions.admittime,lag(admissions.admittime)OVER(ORDER BY admissions.subject_id)) BETWEEN (interval '0 days, 0:00:01') AND (interval '29 days, 23:59:59') THEN 'above row under 30 days' ELSE 'NULL' END as CHECKLAGTTIME,
+--checks to see if admission times are within 0 days, one second and 29 days, 23 hours, 59 minutes, and 59 seconds. (the interval 0 days, 0 seconds was changed to 0 days, one second to prevent a subject_id showing as valid when a patient is diagnosed with multiple things upon admission. Each icd9_code that the patient is diagnosed with is given its own admission time.)
+CASE WHEN admissions.subject_id = lead(admissions.subject_id)OVER(ORDER BY admissions.subject_id) THEN age(lead(admissions.admittime)OVER(ORDER BY admissions.subject_id),admissions.admittime) END as LEADTIME,
 --if row above does not match current row and row below matches current row, then find age between row below and current row
-CASE 
-WHEN admissions.subject_id = lead(admissions.subject_id)OVER(ORDER BY admissions.subject_id) AND age(lead(admissions.admittime)OVER(ORDER BY admissions.subject_id),admissions.admittime) BETWEEN (interval '0 days, 0:00:01') AND (interval '29 days, 23:59:59')
-THEN 'below row under 30 days' ELSE 'NULL' END as CHECKLEADTTIME
+CASE WHEN admissions.subject_id = lead(admissions.subject_id)OVER(ORDER BY admissions.subject_id) AND age(lead(admissions.admittime)OVER(ORDER BY admissions.subject_id),admissions.admittime) BETWEEN (interval '0 days, 0:00:01') AND (interval '29 days, 23:59:59') THEN 'below row under 30 days' ELSE 'NULL' END as CHECKLEADTTIME
 --checks to see if admission times are within 30 days of each other
-
 FROM admissions
 INNER JOIN diagnoses_icd ON admissions.subject_id=diagnoses_icd.subject_id
-WHERE
-(admissions.subject_id) 
+WHERE (admissions.subject_id) 
 IN (SELECT admissions.subject_id FROM admissions 
 GROUP BY admissions.subject_id HAVING COUNT(*) >1)
-AND 
-
 AND
 --total number of patients with an icd 9 diagnoses code = 36140
 diagnoses_icd.icd9_code IN (
