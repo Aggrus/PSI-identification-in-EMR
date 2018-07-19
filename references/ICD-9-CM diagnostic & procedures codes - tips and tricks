@@ -1,0 +1,6 @@
+All ICD-9-CM diagnostic and procedure codes, obtained from administrative data. We do not expect that most physicians or nurses will be familiar with these codes and thus we provide explanations of all codes. 
+•	ICD-9-CM codes are usually assigned using the physician’s charted notes by trained coders. 
+•	Each patient discharged from an inpatient facility is given a principal diagnosis, which represents the condition principally responsible for occasioning the patient’s admission, and a list of secondary diagnosis codes.
+•	Major procedures that involve use of the operating room or risk to the patient are also coded. 
+•	Codes between 996 and 999 are always “complications of surgical and medical care.” 
+•	Codes beginning with ‘E’ refer to the external cause of any injury that the patient sustained.  
