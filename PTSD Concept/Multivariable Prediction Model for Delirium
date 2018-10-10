@@ -1,16 +1,21 @@
-intro:
+Abstarct:
+Delirium is an acute change in mental status that is common among older people in hospital. Characterised by a disturbance of consciousness, attention, cognition and perception that develops over a short period of time (usually hours to a few days), delirium is a serious condition and is associated with increased risk of harm. 
+Despite being a common condition, delirium is poorly recognised and cases are often missed.
 
 
 
+Compared with people of the same age who do not have delirium, people with delirium have an increased risk of death, increased risk of falls, a greater chance of being discharged to a higher dependency of care, and a greater chance of developing dementia.
 
-Multinational development and validation of an Early PREdiction model for DELIRium in ICu patients
-Running title:
-Early PREdiction of DELIRium in ICu patients
+RATIONALE:
+Delirium incidence in intensive care unit (ICU) patients is high and associated with poor outcome. Identification of high-risk patients may facilitate its prevention.
 
+PURPOSE:
+To develop and validate a model based on data available at post OR discharge up to pre ICU admission to predict delirium development during a patient's stay and to determine the predictive value of this model in relation to the time of delirium development.
 
-A. Wassenaar, MSc1; M. van den Boogaard, PhD2; Prof. T. van Achterberg, PhD3,1; A.J.C. Slooter, PhD4; M.A. Kuiper, PhD5; M.E. Hoogendoorn, MSc6; K.S. Simons, MSc7; E. Maseda, PhD8; N. Pinto, MSc9; C. Jones, PhD10; A. Luetz, PhD11; A. Schandl, PhD12; W. Verbrugghe, PhD13; Prof. L.M. Aitken, PhD14,15,16; F.M.P. van Haren, PhD17; A.R.T. Donders, PhD18; Prof. L. Schoonhoven, PhD1,19; Prof. P. Pickkers, PhD2
+previous studies: 
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4477716/
 
-
+potential predictors:
 Collected potential predictors of delirium immediately after ICU admission and outcome definition
 Predictor	Explanation	Category
 age	in years at time of admission	C
@@ -27,10 +32,10 @@ diabetes	diabetes mellitus	D
 blood urea nitrogen (BUN) at time of ICU admission	in mmol/l
 	C
 
-use of opiates in the 24 hours before ICU admission	oral/iv/patches
+use of opiates??	oral/iv/patches
 	Cat.
 
-use of anti-psychotics before ICU admission	anti-psychotics other than for delirium
+use of anti-psychotics??	anti-psychotics other than for delirium
 	D
 
 admission category
@@ -66,6 +71,50 @@ References
 6.	Steyerberg EW (2009) Clinical Prediction Models: A Practical Approach to Development, Validation, and Updating. Springer Science+Business Media, New York
 7.	Moons KG, Royston P, Vergouwe Y, Grobbee DE, Altman DG, (2009) Prognosis and prognostic research: what, why, and how? BMJ 338: b375
 8. https://www.researchgate.net/publication/14373259_Predicting_Delirium_in_Elderly_Patients_Development_and_Validation_of_a_Risk-stratification_Model
-9. 
+
+related: 
+1. APA . Diagnostic and statistical manual of mental disorders. 5. Washington: American Psychiatric Association (APA) ; 2013.
+2. Ouimet S, Kavanagh BP, Gottfried SB, Skrobik Y. Incidence, risk factors and consequences of ICU delirium. Intensive Care Med. 2007;33:66–73. doi: 10.1007/s00134-006-0399-8. [PubMed] [Cross Ref]
+3. van den Boogaard M, Schoonhoven L, van der Hoeven JG, van Achterberg T, Pickkers P. Incidence and short-term consequences of delirium in critically ill patients: a prospective observational cohort study. Int J Nurs Stud. 2012;49:775–783. doi: 10.1016/j.ijnurstu.2011.11.016. [PubMed] [Cross Ref]
+4. Mehta S, Cook D, Devlin JW, Skrobik Y, Meade M, Fergusson D, Herridge M, Steinberg M, Granton J, Ferguson N, Tanios M, Dodek P, Fowler R, Burns K, Jacka M, Olafson K, Mallick R, Reynolds S, Keenan S, Burry L, Investigators S, the Canadian Critical Care Trials G Prevalence, risk factors, and outcomes of delirium in mechanically ventilated adults*. Crit Care Med. 2015;43:557–566. doi: 10.1097/CCM.0000000000000727. [PubMed] [Cross Ref]
+5. Pandharipande PP, Girard TD, Jackson JC, Morandi A, Thompson JL, Pun BT, Brummel NE, Hughes CG, Vasilevskis EE, Shintani AK, Moons KG, Geevarghese SK, Canonico A, Hopkins RO, Bernard GR, Dittus RS, Ely EW, Investigators B-IS. Long-term cognitive impairment after critical illness. N Engl J Med. 2013;369:1306–1316. doi: 10.1056/NEJMoa1301372. [PMC free article] [PubMed] [Cross Ref]
+6. Zhang Z, Pan L, Ni H. Impact of delirium on clinical outcome in critically ill patients: a meta-analysis. Gen Hosp Psychiatry. 2013;35:105–111. doi: 10.1016/j.genhosppsych.2012.11.003. [PubMed] [Cross Ref]
+7. Ely EW, Inouye SK, Bernard GR, Gordon S, Francis J, May L, Truman B, Speroff T, Gautam S, Margolin R, Hart RP, Dittus R. Delirium in mechanically ventilated patients: validity and reliability of the confusion assessment method for the intensive care unit (CAM-ICU) JAMA. 2001;286:2703–2710. doi: 10.1001/jama.286.21.2703. [PubMed] [Cross Ref]
+8. Barr J, Fraser GL, Puntillo K, Ely EW, Gelinas C, Dasta JF, Davidson JE, Devlin JW, Kress JP, Joffe AM, Coursin DB, Herr DL, Tung A, Robinson BR, Fontaine DK, Ramsay MA, Riker RR, Sessler CN, Pun B, Skrobik Y, Jaeschke R, American College of Critical Care M Clinical practice guidelines for the management of pain, agitation, and delirium in adult patients in the intensive care unit. Crit Care Med. 2013;41:263–306. doi: 10.1097/CCM.0b013e3182783b72. [PubMed] [Cross Ref]
+9. Antonelli M, Bonten M, Cecconi M, Chastre J, Citerio G, Conti G, Curtis JR, Hedenstierna G, Joannidis M, Macrae D, Maggiore SM, Mancebo J, Mebazaa A, Preiser JC, Rocco P, Timsit JF, Wernerman J, Zhang H. Year in review in Intensive Care Medicine 2012: I. Neurology and neurointensive care, epidemiology and nephrology, biomarkers and inflammation, nutrition, experimentals. Intensive Care Med. 2013;39:232–246. doi: 10.1007/s00134-012-2774-y. [PMC free article] [PubMed] [Cross Ref]
+10. Inouye SK, Bogardus ST, Jr, Charpentier PA, Leo-Summers L, Acampora D, Holford TR, Cooney LM., Jr A multicomponent intervention to prevent delirium in hospitalized older patients. N Engl J Med. 1999;340:669–676. doi: 10.1056/NEJM199903043400901. [PubMed] [Cross Ref]
+11. Zaubler TS, Murphy K, Rizzuto L, Santos R, Skotzko C, Giordano J, Bustami R, Inouye SK. Quality improvement and cost savings with multicomponent delirium interventions: replication of the Hospital Elder Life Program in a community hospital. Psychosomatics. 2013;54:219–226. doi: 10.1016/j.psym.2013.01.010. [PubMed] [Cross Ref]
+12. Colombo R, Corona A, Praga F, Minari C, Giannotti C, Castelli A, Raimondi F. A reorientation strategy for reducing delirium in the critically ill. Results of an interventional study. Minerva Anestesiol. 2012;78:1026–1033. [PubMed]
+13. Needham DM, Korupolu R, Zanni JM, Pradhan P, Colantuoni E, Palmer JB, Brower RG, Fan E. Early physical medicine and rehabilitation for patients with acute respiratory failure: a quality improvement project. Arch Phys Med Rehabil. 2010;91:536–542. doi: 10.1016/j.apmr.2010.01.002. [PubMed] [Cross Ref]
+14. Patel J, Baldwin J, Bunting P, Laha S. The effect of a multicomponent multidisciplinary bundle of interventions on sleep and delirium in medical and surgical intensive care patients. Anaesthesia. 2014;69:540–549. doi: 10.1111/anae.12638. [PubMed] [Cross Ref]
+15. Kamdar BB, King LM, Collop NA, Sakamuri S, Colantuoni E, Neufeld KJ, Bienvenu OJ, Rowden AM, Touradji P, Brower RG, Needham DM. The effect of a quality improvement intervention on perceived sleep quality and cognition in a medical ICU. Crit Care Med. 2013;41:800–809. doi: 10.1097/CCM.0b013e3182746442. [PMC free article] [PubMed] [Cross Ref]
+16. Page VJ, Ely EW, Gates S, Zhao XB, Alce T, Shintani A, Jackson J, Perkins GD, McAuley DF. Effect of intravenous haloperidol on the duration of delirium and coma in critically ill patients (Hope-ICU): a randomised, double-blind, placebo-controlled trial. Lancet Resp Med. 2013;1:515–523. doi: 10.1016/S2213-2600(13)70166-8. [PMC free article] [PubMed] [Cross Ref]
+17. van den Boogaard M, Pickkers P. Hope for haloperidol in delirium. Lancet Resp Med. 2013;1:e27. doi: 10.1016/S2213-2600(13)70210-8. [PubMed] [Cross Ref]
+18. van den Boogaard M, Schoonhoven L, van Achterberg T, van der Hoeven JG, Pickkers P. Haloperidol prophylaxis in critically ill patients with a high risk for delirium. Crit Care. 2013;17:R9. doi: 10.1186/cc11933. [PMC free article] [PubMed] [Cross Ref]
+19. Wang W, Li HL, Wang DX, Zhu X, Li SL, Yao GQ, Chen KS, Gu XE, Zhu SN. Haloperidol prophylaxis decreases delirium incidence in elderly patients after noncardiac surgery: a randomized controlled trial. Crit Care Med. 2012;40:731–739. doi: 10.1097/CCM.0b013e3182376e4f. [PubMed] [Cross Ref]
+20. Inouye SK, Westendorp RG, Saczynski JS. Delirium in elderly people. Lancet. 2014;383:911–922. doi: 10.1016/S0140-6736(13)60688-1. [PMC free article] [PubMed] [Cross Ref]
+21. Mistraletti G, Pelosi P, Mantovani ES, Berardino M, Gregoretti C. Delirium: clinical approach and prevention. Best Prac Res Clin Anaesthesiol. 2012;26:311–326. doi: 10.1016/j.bpa.2012.07.001. [PubMed] [Cross Ref]
+22. Huybrechts KF, Gerhard T, Crystal S, Olfson M, Avorn J, Levin R, Lucas JA, Schneeweiss S. Differential risk of death in older residents in nursing homes prescribed specific antipsychotic drugs: population based cohort study. BMJ. 2012;344:e977. doi: 10.1136/bmj.e977. [PMC free article] [PubMed] [Cross Ref]
+23. van den Boogaard M, Pickkers P, Slooter AJ, Kuiper MA, Spronk PE, van der Voort PH, van der Hoeven JG, Donders R, van Achterberg T, Schoonhoven L. Development and validation of PRE-DELIRIC (PREdiction of DELIRium in ICu patients) delirium prediction model for intensive care patients: observational multicentre study. BMJ. 2012;344:e420. doi: 10.1136/bmj.e420. [PMC free article] [PubMed] [Cross Ref]
+24. van den Boogaard M, Schoonhoven L, Maseda E, Plowright C, Jones C, Luetz A, Sackey PV, Jorens PG, Aitken LM, van Haren FM, Donders R, van der Hoeven JG, Pickkers P. Recalibration of the delirium prediction model for ICU patients (PRE-DELIRIC): a multinational observational study. Intensive Care Med. 2014;40:361–369. doi: 10.1007/s00134-013-3202-7. [PubMed] [Cross Ref]
+25. Ely EW, Shintani A, Truman B, Speroff T, Gordon SM, Harrell FE, Jr, Inouye SK, Bernard GR, Dittus RS. Delirium as a predictor of mortality in mechanically ventilated patients in the intensive care unit. JAMA. 2004;291:1753–1762. doi: 10.1001/jama.291.14.1753. [PubMed] [Cross Ref]
+26. Serafim RB, Dutra MF, Saddy F, Tura B, de Castro JE, Villarinho LC, da Gloria Santos M, Bozza FA, Rocco JR. Delirium in postoperative nonventilated intensive care patients: risk factors and outcomes. Ann Intensive Care. 2012;2:51. doi: 10.1186/2110-5820-2-51. [PMC free article] [PubMed] [Cross Ref]
+27. Wassenaar A, Van den Boogaard M, Van Achterberg T, Slooter AJC, Kuiper MA, Hoogendoorn ME, K.S. S, Maseda E, Pinto N, Jones C, Luetz A, Schandl A, Verbrugghe W, Aitken LM, Van Haren FMP, Donders ART, Schoonhoven L, Pickkers P (2014) Early PREdiction of DELIRium in ICu patients (E-PRE-DELIRIC): Multinational development and validation of an early delirium prediction model for intensive care patients. In: 27th Annual Congress of the European Society of Intensive Care Medicine, Barcelona, Spain, September 27–October 1, 40: 291
+28. Van den Boogaard M, Wassenaar A, Van Achterberg T, Slooter AJC, Kuiper MA, Hoogendoorn ME, K.S. S, Maseda E, Pinto N, Jones C, Luetz A, Schandl A, Verbrugghe W, Aitken LM, Van Haren FMP, Donders ART, Schoonhoven L, Pickkers P (2014) Early PREdiction of DELIRium in ICu patients (E-PRE-DELIRIC): Multinational development and validation of an early delirium prediction model for intensive care patients. In: 9th Annual meeting European Delirium Association, Cremona, Italy, November 6–7, Session 1, nr 4
+29. Van Rompaey B, Schuurmans MJ, Shortridge-Baggett LM, Truijen S, Bossaert L. Risk factors for intensive care delirium: a systematic review. Intensive Crit Care Nurs. 2008;24:98–107. doi: 10.1016/j.iccn.2007.08.005. [PubMed] [Cross Ref]
+30. Ely EW, Margolin R, Francis J, May L, Truman B, Dittus R, Speroff T, Gautam S, Bernard GR, Inouye SK. Evaluation of delirium in critically ill patients: validation of the Confusion Assessment Method for the Intensive Care Unit (CAM-ICU) Crit Care Med. 2001;29:1370–1379. doi: 10.1097/00003246-200107000-00012. [PubMed] [Cross Ref]
+31. Moons KG, Kengne AP, Woodward M, Royston P, Vergouwe Y, Altman DG, Grobbee DE. Risk prediction models: I. development, internal validation, and assessing the incremental value of a new (bio)marker. Heart. 2012;98:683–690. doi: 10.1136/heartjnl-2011-301246. [PubMed] [Cross Ref]
+32. Steyerberg EW. Clinical prediction models: a practical approach to development, validation, and updating. New York: Springer; 2009.
+33. R Core Team (2013) R: A language and environment for statistical computing. R Foundation for Statistical Computing, Vienna, Austria. Available at http://www.R-project.org/
+34. Localio AR, Stack CB. TRIPOD: a new reporting baseline for developing and interpreting prediction models. Ann Intern Med. 2015;162:73–74. doi: 10.7326/M14-2423. [PubMed] [Cross Ref]
+35. Moons KG, Royston P, Vergouwe Y, Grobbee DE, Altman DG. Prognosis and prognostic research: what, why, and how? BMJ. 2009;338:b375. doi: 10.1136/bmj.b375. [PubMed] [Cross Ref]
+36. Milbrandt EB, Deppen S, Harrison PL, Shintani AK, Speroff T, Stiles RA, Truman B, Bernard GR, Dittus RS, Ely EW. Costs associated with delirium in mechanically ventilated patients. Crit Care Med. 2004;32:955–962. doi: 10.1097/01.CCM.0000119429.16055.92. [PubMed] [Cross Ref]
+37. Huai J, Ye X. A meta-analysis of critically ill patients reveals several potential risk factors for delirium. Gen Hosp Psychiatry. 2014;36:488–496. doi: 10.1016/j.genhosppsych.2014.05.002. [PubMed] [Cross Ref]
+38. Zaal IJ, Devlin JW, Peelen LM, Slooter AJ. A systematic review of risk factors for delirium in the ICU. Crit Care Med. 2015;43:40–47. doi: 10.1097/CCM.0000000000000625. [PubMed] [Cross Ref]
+39. Van Rompaey B, Elseviers MM, Schuurmans MJ, Shortridge-Baggett LM, Truijen S, Bossaert L. Risk factors for delirium in intensive care patients: a prospective cohort study. Crit Care. 2009;13:R77. doi: 10.1186/cc7892. [PMC free article] [PubMed] [Cross Ref]
+40. van Eijk MM, van den Boogaard M, van Marum RJ, Benner P, Eikelenboom P, Honing ML, van der Hoven B, Horn J, Izaks GJ, Kalf A, Karakus A, Klijn IA, Kuiper MA, de Leeuw FE, de Man T, van der Mast RC, Osse RJ, de Rooij SE, Spronk PE, van der Voort PH, van Gool WA, Slooter AJ. Routine use of the confusion assessment method for the intensive care unit: a multicenter study. Am J Respir Crit Care Med. 2011;184:340–344. doi: 10.1164/rccm.201101-0065OC. [PubMed] [Cross Ref]
+41. Haenggi M, Blum S, Brechbuehl R, Brunello A, Jakob SM, Takala J. Effect of sedation level on the prevalence of delirium when assessed with CAM-ICU and ICDSC. Intensive Care Med. 2013;39:2171–2179. doi: 10.1007/s00134-013-3034-5. [PubMed] [Cross Ref]
+42. Patel SB, Poston JT, Pohlman A, Hall JB, Kress JP. Rapidly reversible, sedation-related delirium versus persistent delirium in the intensive care unit. Am J Respir Crit Care Med. 2014;189:658–665. doi: 10.1164/rccm.201310-1815OC. [PubMed] [Cross Ref]
+43. Royston P, Moons KG, Altman DG, Vergouwe Y. Prognosis and prognostic research: developing a prognostic model. BMJ. 2009;338:b604. doi: 10.1136/bmj.b604. [PubMed] [Cross Ref]
 
 
