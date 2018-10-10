@@ -1,4 +1,6 @@
 //ConvNetJS
+//references: https://cs.stanford.edu/people/karpathy/convnetjs/docs.html
+
 <script>
 
 var output_div2 = document.getElementById("output2");
