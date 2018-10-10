@@ -1,0 +1,71 @@
+intro:
+
+
+
+
+Multinational development and validation of an Early PREdiction model for DELIRium in ICu patients
+Running title:
+Early PREdiction of DELIRium in ICu patients
+
+
+A. Wassenaar, MSc1; M. van den Boogaard, PhD2; Prof. T. van Achterberg, PhD3,1; A.J.C. Slooter, PhD4; M.A. Kuiper, PhD5; M.E. Hoogendoorn, MSc6; K.S. Simons, MSc7; E. Maseda, PhD8; N. Pinto, MSc9; C. Jones, PhD10; A. Luetz, PhD11; A. Schandl, PhD12; W. Verbrugghe, PhD13; Prof. L.M. Aitken, PhD14,15,16; F.M.P. van Haren, PhD17; A.R.T. Donders, PhD18; Prof. L. Schoonhoven, PhD1,19; Prof. P. Pickkers, PhD2
+
+
+Collected potential predictors of delirium immediately after ICU admission and outcome definition
+Predictor	Explanation	Category
+age	in years at time of admission	C
+gender	male/female	D
+history of cognitive impairment	known medical history of dementia, mild cognitive impairment or delirium	D
+
+history of nicotine abuse	known medical history of nicotine abuse	D
+history of drug abuse	known medical history of drug abuse	D
+history of alcohol abuse	known medical history of alcohol abuse	D
+history of vascular disease	brain (TIA/CVA), cardiac or other vascular disease	D
+Glasgow Coma Scale (GCS)-score	at time of ICU admission according to APACHE II definition	C
+
+diabetes	diabetes mellitus	D
+blood urea nitrogen (BUN) at time of ICU admission	in mmol/l
+	C
+
+use of opiates in the 24 hours before ICU admission	oral/iv/patches
+	Cat.
+
+use of anti-psychotics before ICU admission	anti-psychotics other than for delirium
+	D
+
+admission category
+	surgical, medical, trauma, neurology/neurosurgical
+(trauma including brain damage was neurology) 	Cat.
+
+urgent admission	unplanned intensive care admission	D
+mean arterial blood pressure (MAP)	at the time of ICU admission in mmHg
+	C
+
+(strong suspicion of) infection
+	proven or strong suspicion of infection for which antibiotics were started	D
+
+use of corticosteroids	oral/iv, used until time of ICU admission	D
+respiratory failure	non-elective mechanically ventilation or non-invasive ventilation is necessary or expected <24hr	D
+		
+Outcome	Explanation	
+delirium	Delirium was diagnosed when the CAM-ICU was positive, and/or when a patient was treated with haloperidol or other anti-psychotics because of delirium. Treatment with anti-psychotics was considered indicative for delirium in patients without previous anti-psychotic medications, as in all participating centres haloperidol was only used to treat delirium. For example, if a patient who screened negative for delirium with the CAM-ICU was suddenly heavily agitated and therefore successfully treated with haloperidol, the next CAM-ICU would again be negative; in these cases the patient was considered positive for delirium
+
+C= continuous		
+D= dichotomous 		
+Cat.= categorical
+d by two CAM-ICU experts, making this not applicable 
+ 
+
+ 
+References
+1.	IBM (2011) IBM SPSS Missing Values 20. IBM Corporation 1989
+2.	van den Boogaard M, Pickkers P, Slooter AJ, Kuiper MA, Spronk PE, van der Voort PH, van der Hoeven JG, Donders R, van Achterberg T, Schoonhoven L, (2012) Development and validation of PRE-DELIRIC (PREdiction of DELIRium in ICu patients) delirium prediction model for intensive care patients: observational multicentre study. BMJ 344: e420
+3.	van Buuren S, Groothuis-Oudshoorn K, (2011) mice: Multivariate Imputation by Chained Equations in R. J Stat Softw 45: 1-67
+4.	Altman DG, Vergouwe Y, Royston P, Moons KG, (2009) Prognosis and prognostic research: validating a prognostic model. BMJ 338: b605
+5.	Moons KG, Kengne AP, Woodward M, Royston P, Vergouwe Y, Altman DG, Grobbee DE, (2012) Risk prediction models: I. Development, internal validation, and assessing the incremental value of a new (bio)marker. Heart 98: 683-690
+6.	Steyerberg EW (2009) Clinical Prediction Models: A Practical Approach to Development, Validation, and Updating. Springer Science+Business Media, New York
+7.	Moons KG, Royston P, Vergouwe Y, Grobbee DE, Altman DG, (2009) Prognosis and prognostic research: what, why, and how? BMJ 338: b375
+8. https://www.researchgate.net/publication/14373259_Predicting_Delirium_in_Elderly_Patients_Development_and_Validation_of_a_Risk-stratification_Model
+9. 
+
+
